@@ -1,0 +1,59 @@
+Produit scalaire
+ps:= 0.0 réel
+Procedure dot_product (v1 : réel; v2:réel): réel
+    Debut
+    Ecrire « Donnez les deux vecteurs :  »
+    Lire v1, v2
+    
+    ps= v1*v2*cos(​π/3)
+    fin
+finprocedure
+
+Vecteurs orthogonaux
+tab1:= [1,2,0,3,0], tab2:= [5,2,1,0,0] tableau reel
+    Procedure test_orthogonalite()
+        Debut
+            Pour i <-0 à tab1-1
+                Pour j <-0 à tab2-1
+                    si dot_product(i, j) == 0
+                        Ecrire "Les deux vecteurs sont orthogonaux "
+                    sinon
+                        Ecrire "Les deux vecteurs  ne sont pas  orthogonaux "
+                    finsi
+                finpour
+            finpour
+        fin
+    finprocedure
+
+/*L utilisation des fonctions pour les deux cas preceentes */
+Produit scalaire
+ps:= 0.0 réel
+Fonction dot_product (v1 : réel; v2:réel): réel
+    Debut
+    Ecrire « Donnez les deux vecteurs :  »
+    Lire v1, v2
+    
+    ps= v1*v2*cos(​π/3)
+    fin
+retourne ps
+finfonction
+
+Vecteur orthogonaux
+tab1:=[1,2,0,3,0], tab2:=[5,2,1,0,0] tableau reel
+    Procedure test_orthogonalite()
+        Debut
+            Pour i <-0 à tab1-1
+                Pour j <-0 à tab2-1
+                    si dot_product(i, j) == 0
+                        Ecrire "Les deux vecteurs sont orthogonaux "
+                    sinon
+                        Ecrire "Les deux vecteurs  ne sont orthogonaux "
+                    finsi
+                finpour
+            finpour
+        fin
+    finprocedure
+
+​
+
+​​

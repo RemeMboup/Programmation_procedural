@@ -1,0 +1,17 @@
+Somme d elemaent distincts
+somme_jeu1 :0 entier
+somme_jeu2 :0 entier
+jeu1:[3, 1, 7, 9] tableau
+jeu1:[2, 4, 1, 9, 3] tableau
+
+Debut
+    Pour i <- 1 à len(jeu1)
+        somme_jeu1 = somme_jeu1 + i
+        white(somme_jeu1)
+    finpour
+    Pour i <- 1 à len(jeu2)
+        somme_jeu2 = somme_jeu2 + i
+        white(somme_jeu2)
+    finpour
+fin
+    
